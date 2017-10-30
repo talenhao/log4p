@@ -13,7 +13,7 @@ __version__ = __last_date__
 __create_date__ = "2017.08.21"
 
 current_path = os.path.dirname(__file__)
-config = current_path + "/log4p.json"
+config = current_path + "/log4python.json"
 
 
 class GetLogger:
