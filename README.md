@@ -62,7 +62,8 @@ Config file:
 可以修改"filename"配置日志文件生成位置,可使用相对或绝对路径.
 
 
-Usage:
+#Usage:
+```
     Install:
         pip install log4p
     Add to you script:
@@ -70,3 +71,4 @@ Usage:
         SCRIPT_NAME = os.path.basename(__file__)
         pLogger = log4p.GetLogger(SCRIPT_NAME, logging.DEBUG).get_l()
         pLogger.debug("Type some log.")
+```
