@@ -19,29 +19,31 @@ logger = log4p.GetLogger(__name__)
 log = logger.logger
 log.debug("Hello Tianfei Hao!")
 log.info("Enjoy your happy time!")
-log.warning("If you have any better Suggestions, please contact Tianfei Hao at talenhao@gmail.com")
-log.info("Thanks for star on github: https://github.com/talenhao/log4p")
+log.error("If you have any better Suggestions, please contact Tianfei Hao at talenhao@gmail.com")
+log.warning("Thanks for star on github: https://github.com/talenhao/log4p")
 ```
 
 ## demo
 
 ```shell
-[Sat Jul 13 talen@tp-arch-tianfei log4p]$ python a_test_file.py
-2019-07-13 01:25:29,128 - __main__ - INFO - Enjoy your happy time!
-2019-07-13 01:25:29,128 - __main__ - WARNING - If you have any better Suggestions, please contact Tianfei Hao at talenhao@gmail.com
-2019-07-13 01:25:29,128 - __main__ - INFO - Thanks for star on github: https://github.com/talenhao/log4p
+(log4p) [Sat Jul 13 talen@tp-arch-tianfei log4p]$ python a_test_file.py
+2019-07-13 02:23:42,664 - __main__ - INFO - Enjoy your happy time!
+2019-07-13 02:23:42,664 - __main__ - ERROR - If you have any better Suggestions, please contact Tianfei Hao at talenhao@gmail.com
+2019-07-13 02:23:42,664 - __main__ - WARNING - Thanks for star on github: https://github.com/talenhao/log4p
 
 
 [Sat Jul 13 talen@tp-arch-tianfei log4p]$ ls -l *.log
 -rw-r--r-- 1 talen users 1195 Jul 13 01:25 log4p-debug.log
 -rw-r--r-- 1 talen users    0 Jul 13 00:58 log4p-errors.log
 
+(log4p) [Sat Jul 13 talen@tp-arch-tianfei log4p]$ cat log4p-errors.log
+2019-07-13 02:23:42,664 ERROR a_test_file.py +7 <module> [MainThread]: If you have any better Suggestions, please contact Tianfei Hao at talenhao@gmail.com
 
-[Sat Jul 13 talen@tp-arch-tianfei log4p]$ python a_test_file.py
-2019-07-13 01:25:29,128 DEBUG a_test_file.py +5 <module> [MainThread]: Hello Tianfei Hao!
-2019-07-13 01:25:29,128 INFO  a_test_file.py +6 <module> [MainThread]: Enjoy your happy time!
-2019-07-13 01:25:29,128 WARNING a_test_file.py +7 <module> [MainThread]: If you have any better Suggestions, please contact Tianfei Hao at talenhao@gmail.com
-2019-07-13 01:25:29,128 INFO  a_test_file.py +8 <module> [MainThread]: Thanks for star on github: https://github.com/talenhao/log4p
+(log4p) [Sat Jul 13 talen@tp-arch-tianfei log4p]$ cat log4p-debug.log
+2019-07-13 02:23:42,664 DEBUG a_test_file.py +5 <module> [MainThread]: Hello Tianfei Hao!
+2019-07-13 02:23:42,664 INFO  a_test_file.py +6 <module> [MainThread]: Enjoy your happy time!
+2019-07-13 02:23:42,664 ERROR a_test_file.py +7 <module> [MainThread]: If you have any better Suggestions, please contact Tianfei Hao at talenhao@gmail.com
+2019-07-13 02:23:42,664 WARNING a_test_file.py +8 <module> [MainThread]: Thanks for star on github: https://github.com/talenhao/log4p
 ```
 
 ## Config file:
