@@ -22,16 +22,17 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='2017.12.14.04',
+    version='2019.07.13.01',
 
-    description='A simple log moduel based logging for python.',
+    description='A simple log module based logging for python.',
     long_description=long_description,
+    long_description_content_type="text/markdown",
 
     # The project's main homepage.
     url='https://github.com/talenhao/log4p',
 
     # Author details
-    author='Tianfei Hao',
+    author='Tianfei Hao(郝天飞)',
     author_email='talenhao@gmail.com',
 
     # Choose your license
@@ -54,6 +55,7 @@ setup(
 
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
+        'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 3',
     ],
 

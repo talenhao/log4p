@@ -22,10 +22,10 @@
             "class": "logging.handlers.TimedRotatingFileHandler",
             "level": "DEBUG",
             "formatter": "detail",
-            "filename": "/tmp/debug.log",
-            "when": "H",
+            "filename": "log4p-debug.log",
+            "when": "D",
             "interval": 1,
-            "backupCount": 5,
+            "backupCount": 30,
             "encoding": "utf8"
         },
 
@@ -33,7 +33,7 @@
             "class": "logging.handlers.RotatingFileHandler",
             "level": "ERROR",
             "formatter": "detail",
-            "filename": "/tmp/errors.log",
+            "filename": "log4p-errors.log",
             "maxBytes": 10485760,
             "backupCount": 2,
             "encoding": "utf8"
